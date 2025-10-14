@@ -1,9 +1,26 @@
 
 import java.util.Calendar;
 
-public class Fahrstunde { 
+abstract public class Fahrstunde { 
 	
-	// TODO Ergänzen sie die Klasse Fahrstunde anhand der Aufgabenstellung
+	// TODO Ergï¿½nzen sie die Klasse Fahrstunde anhand der Aufgabenstellung
+	
+	//Attribute
+	private long datum;
+	protected int anzahl;
+	private boolean fastLane;
+	private int typ;
+	private String name;
+	
+	//Konstruktor
+	public Fahrstunde (long datum, int anzahl) {
+		this.datum = datum;
+		this.anzahl = anzahl;
+	}
+	public Fahrstunde (int anzhal) {
+		this.anzahl = anzahl;
+	}
+	//Methoden
 	
 	// Hilfsfunktion zum bestimmen des aktuellen Datum als Zahl
 	// im Format yyyymmdd
@@ -15,5 +32,28 @@ public class Fahrstunde {
 		long date = y * 10000 + (m + 1) * 100 + d;
 
 		return date;
+	}
+	public void ausgeben() {
+		
+	}
+	
+	public int getTyp() {
+		return typ;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public double berechnePreis() {
+		return anzahl;
+	}
+	
+	public void setFastLane() {
+		
+	}
+	
+	public boolean isFastLane() {
+		return true;
 	}
 }
