@@ -7,17 +7,16 @@ abstract public class Fahrstunde {
 	
 	//Attribute
 	private long datum;
-	protected int anzahl;
+	protected int anzahl = 2;
 	private boolean fastLane;
-	private int typ;
-	private String name;
+	
 	
 	//Konstruktor
 	public Fahrstunde (long datum, int anzahl) {
-		this.datum = datum;
+		this.datum = berechneDatum();
 		this.anzahl = anzahl;
 	}
-	public Fahrstunde (int anzhal) {
+	public Fahrstunde (int anzahl) {
 		this.anzahl = anzahl;
 	}
 	//Methoden
@@ -33,27 +32,18 @@ abstract public class Fahrstunde {
 
 		return date;
 	}
+	
 	public void ausgeben() {
-		
+		System.out.println(berechnePreis());
 	}
 	
-	public int getTyp() {
-		return typ;
-	}
-	
-	public String getName() {
-		return name;
-	}
-	
-	public double berechnePreis() {
-		return anzahl;
-	}
+	abstract public double berechnePreis();
 	
 	public void setFastLane() {
-		
+		this.fastLane = fastLane;
 	}
 	
 	public boolean isFastLane() {
-		return true;
+		return fastLane;
 	}
 }

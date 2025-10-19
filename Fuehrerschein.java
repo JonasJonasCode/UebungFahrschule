@@ -19,7 +19,7 @@ public class Fuehrerschein {
 //		Erwartete Ausgabe:
 //		
 //		Name: Fritz
-//		Grundgebühr: 120.0
+//		Grundgebï¿½hr: 120.0
 //		20180105: Standard-Fahrt Stunden 2
 //		20180110: Standard-Fahrt Stunden 2
 //		20180211: Standard-Fahrt Stunden 2
@@ -45,14 +45,14 @@ public class Fuehrerschein {
 		fahrschueler.eintragen( new SonderFahrt(20180524, 3) );
 		fahrschueler.eintragen( new SonderFahrt(20180525, 2) );
 		fahrschueler.eintragen( new SonderFahrt(20180601, 2) );
-		fahrschueler.eintragen( new StandardFahrt(2) );
-		fahrschueler.eintragen( new SonderFahrt(1) );
+		fahrschueler.eintragen( new StandardFahrt(2, 0) );
+		fahrschueler.eintragen( new SonderFahrt(1, 0) );
 		
 		fahrschueler.ausgebenStatus();
 //		Erwartete Ausgabe:
 //		
 //		Name: Fritz
-//		Grundgebühr: 195.0
+//		Grundgebï¿½hr: 195.0
 //		20180105: Standard-Fahrt Stunden 2
 //		20180110: Standard-Fahrt Stunden 2
 //		20180211: Standard-Fahrt Stunden 2
@@ -74,7 +74,7 @@ public class Fuehrerschein {
 //		Anzahl Standard-Fahrten: 24 Preis: 832.0
 //		Anzahl Sonder-Fahrten: 12 Preis: 706.7999999999998
 //		Gesamtpreis: 1733.7999999999997
-//		Mindeststundenanzahlen erreicht. Viel Erfolg bei der Prüfung
+//		Mindeststundenanzahlen erreicht. Viel Erfolg bei der Prï¿½fung
 //		
 		
 		
