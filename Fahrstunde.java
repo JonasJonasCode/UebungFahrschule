@@ -42,6 +42,11 @@ abstract public class Fahrstunde {
 	public boolean getFastLane() {
 		return fastLane;
 	}
+	
+	public void setFastLane(boolean fastLane) {
+		this.fastLane = fastLane;
+	}
+	
 	public long getDatum() {
 		return datum;
 	}
