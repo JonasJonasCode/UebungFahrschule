@@ -1,7 +1,7 @@
 
 public class StandardFahrt extends Fahrstunde {
 
-    public static final int TYP = 0;
+    public static final int TYP = 0; //Sinn?
 	public static final String TYP_NAME = "Standard";
 	private double preis = 27.0;
 

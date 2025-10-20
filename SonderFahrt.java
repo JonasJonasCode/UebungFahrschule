@@ -1,7 +1,8 @@
 
 public class SonderFahrt extends Fahrstunde{
 
-    public static final String TYP_NAME = "Sonder";
+	public static final int TYP = 1; //Sinn?
+	public static final String TYP_NAME = "Sonder";
 	
 	public SonderFahrt(long datum, int anzahl) {
 		super(datum, anzahl);

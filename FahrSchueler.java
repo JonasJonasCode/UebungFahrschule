@@ -19,13 +19,11 @@ public class FahrSchueler {
 	
 	public boolean eintragen(Fahrstunde neu) {
 	    if (neu == null) {
-	        return false; // Fehlerfall
+	        return false; 
 	    }
-	    // fastLane weitergeben
 	    if (fastLane) {
 	        neu.setFastLane(this.fastLane);
 	    }
-	    // Fahrstunde speichern
 	    fahrstunden.add(neu);
 	    return true;
 	}

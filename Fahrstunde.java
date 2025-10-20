@@ -2,9 +2,7 @@
 import java.util.Calendar;
 
 abstract public class Fahrstunde { 
-	
-	// TODO Erg�nzen sie die Klasse Fahrstunde anhand der Aufgabenstellung
-	
+		
 	//Attribute
 	private long datum;
 	protected int anzahl = 2;
@@ -36,7 +34,6 @@ abstract public class Fahrstunde {
 	abstract public void ausgeben();
 	
 	abstract public double berechnePreis();
-	
 	
 	
 	public boolean getFastLane() {
