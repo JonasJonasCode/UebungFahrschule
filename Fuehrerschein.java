@@ -45,8 +45,8 @@ public class Fuehrerschein {
 		fahrschueler.eintragen( new SonderFahrt(20180524, 3) );
 		fahrschueler.eintragen( new SonderFahrt(20180525, 2) );
 		fahrschueler.eintragen( new SonderFahrt(20180601, 2) );
-		fahrschueler.eintragen( new StandardFahrt(2, 0) );
-		fahrschueler.eintragen( new SonderFahrt(1, 0) );
+		fahrschueler.eintragen( new StandardFahrt(2) );
+		fahrschueler.eintragen( new SonderFahrt(1) );
 		
 		fahrschueler.ausgebenStatus();
 //		Erwartete Ausgabe:
