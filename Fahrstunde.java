@@ -33,17 +33,19 @@ abstract public class Fahrstunde {
 		return date;
 	}
 	
-	public void ausgeben() {
-		System.out.println(berechnePreis());
-	}
+	abstract public void ausgeben();
 	
 	abstract public double berechnePreis();
 	
-	public void setFastLane() {
-		this.fastLane = fastLane;
-	}
 	
-	public boolean isFastLane() {
+	
+	public boolean getFastLane() {
 		return fastLane;
+	}
+	public long getDatum() {
+		return datum;
+	}
+	public void setDatum(long datum) {
+		this.datum = datum;
 	}
 }
